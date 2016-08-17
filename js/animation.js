@@ -121,6 +121,19 @@ $(window).scroll(function(){
 	var hei = window.scrollY
 	var wid = window.scrollX
 	var abright = 450-hei
+	var width = $(window).width();
+	var bodywidth = $(document.body).width();
+	if(width<1920){
+		$(document.body).css({
+			"width":"1920px"
+		});
+	}else{
+		$(document.body).css("width",width+"px");
+	};
+	if (width<1920) {
+		var start = (1920 - width)/2
+		$(window).scrollLeft(start);
+	};
 	if(hei<400){
 		$(".scroll").scrollTop(abright)
 		$(".scroll").css({
