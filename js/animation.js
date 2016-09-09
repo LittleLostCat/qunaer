@@ -24,33 +24,33 @@ var bargainGo =  $(".bargain").offset().top;
 var freegoGo =  $(".freego").offset().top;
 var essentialGo =  $(".essential").offset().top;
 //当前页面刷新触发
-$(document).ready(function(){
-	var width = $(window).width();
-	var bodywidth=$(document.body).width();
-	// console.log($(window).width());
-	if(width<1920){
-		$(document.body).css("width","1920px");
-	}else{
-		$(document.body).css("width",width+"px");
-	};
-});
+// $(document).ready(function(){
+// 	var width = $(window).width();
+// 	var bodywidth=$(document.body).width();
+// 	// console.log($(window).width());
+// 	if(width<1920){
+// 		$(document.body).css("width","1920px");
+// 	}else{
+// 		$(document.body).css("width",width+"px");
+// 	};
+// });
 //body适应屏幕
-$(window).resize(function(){
-	var width = $(window).width();
-	var bodywidth=$(document.body).width();
-	// console.log($(window).width());
-	if(width<1920){
-		$(document.body).css({
-			"width":"1920px"
-		});
-	}else{
-		$(document.body).css("width",width+"px");
-	};
-	if (width<1920) {
-		var start = (1920 - width)/2
-		$(window).scrollLeft(start);
-	};
-});
+// $(window).resize(function(){
+// 	var width = $(window).width();
+// 	var bodywidth=$(document.body).width();
+// 	// console.log($(window).width());
+// 	if(width<1920){
+// 		$(document.body).css({
+// 			"width":"1920px"
+// 		});
+// 	}else{
+// 		$(document.body).css("width",width+"px");
+// 	};
+// 	if (width<1920) {
+// 		var start = (1920 - width)/2
+// 		$(window).scrollLeft(start);
+// 	};
+// });
 $(".nav .midnav .citylist li").click(function(){
 	$(this).addClass("current").css("color","black").siblings().removeClass("current").css({"color":"white","border":"2px solid white"});
 }).mouseenter(function(){
@@ -123,17 +123,17 @@ $(window).scroll(function(){
 	var abright = 450-hei
 	var width = $(window).width();
 	var bodywidth = $(document.body).width();
-	if(width<1920){
-		$(document.body).css({
-			"width":"1920px"
-		});
-	}else{
-		$(document.body).css("width",width+"px");
-	};
-	if (width<1920) {
-		var start = (1920 - width)/2
-		$(window).scrollLeft(start);
-	};
+	// if(width<1920){
+	// 	$(document.body).css({
+	// 		"width":"1920px"
+	// 	});
+	// }else{
+	// 	$(document.body).css("width",width+"px");
+	// };
+	// if (width<1920) {
+	// 	var start = (1920 - width)/2
+	// 	$(window).scrollLeft(start);
+	// };
 	if(hei<400){
 		$(".scroll").scrollTop(abright)
 		$(".scroll").css({
